@@ -1,15 +1,28 @@
+@font-face {
+    font-family: 'SpaceMono';
+    src: url(./fonts/SpaceMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'SpaceMono';
+    src: url(./fonts/SpaceMono-Bold.ttf);
+    font-weight: bold;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'SpaceMono', monospace;
 }
 
 body {
     /* background: linear-gradient(180deg, #111, #fff); */
+    height: 100vh;
     background: #111;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .main-nav-link,
@@ -22,7 +35,7 @@ body {
     height: 60px;
     padding: 10px;
     display: flex;
-    align-items: center;;
+    align-items: center;
 }
 
 .main-navigation img {
@@ -54,10 +67,25 @@ body {
     border-bottom: 1px solid #D51840;
     color: #D51840;
     font-weight: 700;
+    transition-delay: 150ms;
+}
+
+main {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+main h1 {
+    color: #ccc;
+    width: 100%;
 }
 
 footer {
-    height: 60px;
+    height: 40px;
     padding: 10px;
     color: #888;
     font-size: 0.8em;
