@@ -20,9 +20,6 @@ body {
     background: #111;
     background: linear-gradient(180deg,#070707,#430815,#4c0918);
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .main-nav-link,
@@ -72,25 +69,25 @@ body {
 }
 
 main {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
 
-
 footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
     padding: 10px;
+    color: #eee;
+}
+
+.footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    color: #ddd;
-}
-
-footer h1 {
-    color: #eee;
 }
 
 footer p {
